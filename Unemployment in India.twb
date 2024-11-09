@@ -1,0 +1,1500 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://localhost' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990?rev=1.0' id='UnemploymentinIndia_17311349922990' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Unemployment in India (unemployment)' inline='true' name='federated.1o0q5871fjeyti14qdcqr1hywubs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='unemployment' name='excel-direct.0l5r71f0udfb9d16ddj3j0h5lx9t'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='unemployment1' name='excel-direct.0qdmuat0sgvc1f1bj99ts0fjcv3x'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' interpretationMode='0' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0qdmuat0sgvc1f1bj99ts0fjcv3x' name='Unemployment in India' table='[&apos;Unemployment in India$&apos;]' type='table'>
+          <columns gridOrigin='A1:H755:no:A1:H755:0' header='yes' outcome='6'>
+            <column datatype='string' name='Region' ordinal='0' />
+            <column datatype='date' date-parse-format=' dd-MM-yyyy' name='Date' ordinal='1' />
+            <column datatype='string' name='Frequency' ordinal='2' />
+            <column datatype='real' name='Estimated Unemployment Rate (%)' ordinal='3' />
+            <column datatype='integer' name='Estimated Employed' ordinal='4' />
+            <column datatype='real' name='Estimated Labour Participation Rate (%)' ordinal='5' />
+            <column datatype='string' name='Area' ordinal='6' />
+            <column datatype='string' name='Country' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H755:no:A1:H755:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LAR_REG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LAR_REG_S2' />
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frequency</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Frequency]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Frequency</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LAR_REG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Unemployment Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Estimated Unemployment Rate (%)]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Estimated Unemployment Rate (%)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Employed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Estimated Employed]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Estimated Employed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Estimated Labour Participation Rate (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Estimated Labour Participation Rate (%)]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Estimated Labour Participation Rate (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LAR_REG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Unemployment in India]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LAR_REG_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='real' name='[Estimated Labour Participation Rate (%)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Estimated Unemployment Rate (%)]' role='measure' type='quantitative' />
+      <column caption='Unemployment in India' datatype='table' name='[__tableau_internal_object_id__].[Unemployment in India_70A2C3F6253943FC96E113574A987A08]' role='measure' type='quantitative' />
+      <column-instance column='[Estimated Labour Participation Rate (%)]' derivation='Avg' name='[avg:Estimated Labour Participation Rate (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Avg' name='[avg:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Estimated Labour Participation Rate (%)]' derivation='Sum' name='[sum:Estimated Labour Participation Rate (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Sum' name='[sum:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='D:/My Projects/Unemployment in India.twb Files/Data/TableauTemp/#TableauTemp_1k0dzx919e3one114klzj05hqtv0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/09/2024 06:08:36 AM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LAR_RSA' />
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Frequency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frequency</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LAR_RSA' />
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated Unemployment Rate (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Estimated Unemployment Rate (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estimated Unemployment Rate (%)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>624</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated Employed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Estimated Employed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estimated Employed</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>740</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Estimated Labour Participation Rate (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Estimated Labour Participation Rate (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Estimated Labour Participation Rate (%)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>626</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LAR_RSA' />
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Unemployment in India</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LAR_RSA' />
+              <object-id>[Unemployment in India_70A2C3F6253943FC96E113574A987A08]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1o0q5871fjeyti14qdcqr1hywubs].[sum:Estimated Labour Participation Rate (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Unemployment Rate (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1o0q5871fjeyti14qdcqr1hywubs].[sum:Estimated Unemployment Rate (\%):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Egypt&quot;' />
+      </semantic-values>
+      <date-options start-of-week='saturday' />
+      <object-graph>
+        <objects>
+          <object caption='Unemployment in India' id='Unemployment in India_70A2C3F6253943FC96E113574A987A08'>
+            <properties context=''>
+              <relation connection='excel-direct.0qdmuat0sgvc1f1bj99ts0fjcv3x' name='Unemployment in India' table='[&apos;Unemployment in India$&apos;]' type='table'>
+                <columns gridOrigin='A1:H755:no:A1:H755:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Region' ordinal='0' />
+                  <column datatype='date' date-parse-format=' dd-MM-yyyy' name='Date' ordinal='1' />
+                  <column datatype='string' name='Frequency' ordinal='2' />
+                  <column datatype='real' name='Estimated Unemployment Rate (%)' ordinal='3' />
+                  <column datatype='integer' name='Estimated Employed' ordinal='4' />
+                  <column datatype='real' name='Estimated Labour Participation Rate (%)' ordinal='5' />
+                  <column datatype='string' name='Area' ordinal='6' />
+                  <column datatype='string' name='Country' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Unemployment in Rural and Urban</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Sheet1?rev=' id='108198496' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Unemployment in India (unemployment)' name='federated.1o0q5871fjeyti14qdcqr1hywubs' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1o0q5871fjeyti14qdcqr1hywubs'>
+            <column datatype='string' name='[Area]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Estimated Unemployment Rate (%)]' role='measure' type='quantitative' />
+            <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Avg' name='[avg:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]' />
+              <wedge-size column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Unemployment Rate (%):qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7C93A10C-1D43-4660-8D89-E81A9A3E0CC0}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>The unemployment rate in regions with Ruler and Orban.</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Sheet2?rev=' id='108198497' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Unemployment in India (unemployment)' name='federated.1o0q5871fjeyti14qdcqr1hywubs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o0q5871fjeyti14qdcqr1hywubs'>
+            <column datatype='string' name='[Area]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Estimated Unemployment Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Sum' name='[sum:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</rows>
+        <cols>[federated.1o0q5871fjeyti14qdcqr1hywubs].[sum:Estimated Unemployment Rate (%):qk]</cols>
+      </table>
+      <simple-id uuid='{755D3B44-757B-41C5-B883-565EE8715C9F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Employment in regions over 2019 and 2020</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Sheet3?rev=' id='108198498' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Unemployment in India (unemployment)' name='federated.1o0q5871fjeyti14qdcqr1hywubs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o0q5871fjeyti14qdcqr1hywubs'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Estimated Labour Participation Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Estimated Labour Participation Rate (%)]' derivation='Avg' name='[avg:Estimated Labour Participation Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (%):qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[yr:Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</rows>
+        <cols>[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (%):qk]</cols>
+      </table>
+      <simple-id uuid='{C56808D8-3109-4FB7-8FD4-FD8C6030B1D0}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>The unemployment rate in rural and urban over 2019 and 2020</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Sheet4?rev=' id='108198499' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Unemployment in India (unemployment)' name='federated.1o0q5871fjeyti14qdcqr1hywubs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o0q5871fjeyti14qdcqr1hywubs'>
+            <column datatype='string' name='[Area]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Estimated Unemployment Rate (%)]' role='measure' type='quantitative' />
+            <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Avg' name='[avg:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk] * [federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Unemployment Rate (%):qk])</rows>
+        <cols>[federated.1o0q5871fjeyti14qdcqr1hywubs].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{295886E8-BBA1-4898-893E-110B7E9932B5}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>The unemployment rate in regions over 2019 and 2020</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Sheet5?rev=' id='108198500' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Unemployment in India (unemployment)' name='federated.1o0q5871fjeyti14qdcqr1hywubs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o0q5871fjeyti14qdcqr1hywubs'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Estimated Unemployment Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Avg' name='[avg:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1o0q5871fjeyti14qdcqr1hywubs].[yr:Date:ok] * [federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Unemployment Rate (%):qk])</rows>
+        <cols>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</cols>
+      </table>
+      <simple-id uuid='{28253277-111E-418D-8233-DCD0A7D38A86}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Employment and unemployment in rural an urban</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Sheet6?rev=' id='108198501' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Unemployment in India (unemployment)' name='federated.1o0q5871fjeyti14qdcqr1hywubs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o0q5871fjeyti14qdcqr1hywubs'>
+            <column datatype='string' name='[Area]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Estimated Labour Participation Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Estimated Unemployment Rate (%)]' role='measure' type='quantitative' />
+            <column-instance column='[Estimated Labour Participation Rate (%)]' derivation='Avg' name='[avg:Estimated Labour Participation Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Avg' name='[avg:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Area]' derivation='None' name='[none:Area:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Unemployment Rate (\%):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1o0q5871fjeyti14qdcqr1hywubs].[Multiple Values]</rows>
+        <cols>([federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk] / [federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{0A5D24FD-1E37-4EBE-9507-F2DB35F5BF6F}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>The high region in employment and unemployment </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Sheet7?rev=' id='108198502' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Unemployment in India (unemployment)' name='federated.1o0q5871fjeyti14qdcqr1hywubs' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o0q5871fjeyti14qdcqr1hywubs'>
+            <column datatype='real' name='[Estimated Labour Participation Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Estimated Unemployment Rate (%)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column-instance column='[Estimated Labour Participation Rate (%)]' derivation='Avg' name='[avg:Estimated Labour Participation Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Estimated Unemployment Rate (%)]' derivation='Avg' name='[avg:Estimated Unemployment Rate (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (%):qk]' />
+              <size column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Unemployment Rate (%):qk]' />
+              <text column='[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{15A2E799-6A7C-48E5-9FE7-3FDAF60A7A2B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Unemployment in India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://vizhub/workbooks/UnemploymentinIndia_17311349922990/Dashboard1?rev=' id='108198503' path='/workbooks/UnemploymentinIndia_17311349922990' revision='' />
+      <style />
+      <size maxheight='1100' maxwidth='1620' minheight='1100' minwidth='1320' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98546' id='17' param='vert' type-v2='layout-flow' w='99012' x='494' y='727'>
+            <zone h='4545' id='18' type-v2='title' w='99012' x='494' y='727'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94001' id='7' param='horz' type-v2='layout-flow' w='99012' x='494' y='5272'>
+              <zone h='94001' id='5' type-v2='layout-basic' w='97037' x='494' y='5272'>
+                <zone h='59546' id='10' name='Sheet 7' w='45308' x='494' y='5272'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46990' id='12' name='Sheet 4' w='51729' x='45802' y='5272'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='47011' id='13' name='Sheet 5' w='51729' x='45802' y='52262'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='34455' id='14' name='Sheet 6' w='45308' x='494' y='64818'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='32' h='94001' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='1975' x='97531' y='5272'>
+                <zone h='6636' id='11' name='Sheet 7' pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (%):qk]' type-v2='color' w='1975' x='97531' y='5272'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='6545' id='15' name='Sheet 6' pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]' type-v2='color' w='1975' x='97531' y='11908'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Unemployment in India</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98546' id='25' param='vert' type-v2='layout-flow' w='99012' x='494' y='727'>
+                <zone h='4545' id='18' type-v2='title' w='99012' x='494' y='727'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59546' id='10' is-fixed='true' name='Sheet 7' w='45308' x='494' y='5272'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6636' id='11' name='Sheet 7' pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (%):qk]' type-v2='color' w='1975' x='97531' y='5272'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46990' id='12' is-fixed='true' name='Sheet 4' w='51729' x='45802' y='5272'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47011' id='13' is-fixed='true' name='Sheet 5' w='51729' x='45802' y='52262'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='34455' id='14' is-fixed='true' name='Sheet 6' w='45308' x='494' y='64818'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6545' id='15' name='Sheet 6' pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]' type-v2='color' w='1975' x='97531' y='11908'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FCB6EEA8-4995-49F8-9B82-6298FB5763FD}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Country:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FCE90EE8-9F51-4D87-9B40-E7CBBE3621ED}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A0D8B059-D50B-4270-9BFF-0B930FB6EE3D}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[yr:Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[tyr:Date:ok]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{269C3A50-61E1-480C-9FD2-1E7B870C2D20}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Country:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{923A3792-4D79-478F-9872-A68A2E1CB07B}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4E60FD55-ADEE-45C2-9683-3C939B5DEE47}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Area:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8B39F01A-7A6A-4A11-A528-4B7ACF1594B4}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (%):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Labour Participation Rate (%):qk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[avg:Estimated Unemployment Rate (%):qk]</field>
+            <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EA958910-4601-469A-919A-963C4F3F9A16}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1o0q5871fjeyti14qdcqr1hywubs].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Sheet 7' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B88B31E2-CE1F-469B-BE86-9A7EFBCBC2EF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
